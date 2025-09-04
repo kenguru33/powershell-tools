@@ -1,6 +1,6 @@
-*POWERSHELL TOOLS*
+# powershell-tools
 
-***Installation***
+## Installation
 
 Enter powershell:
 ```
@@ -61,4 +61,3 @@ matheo@domain.no
 ```
 .\Get-UpnByAlias.ps1 sveintm@rs.no
 ```
-# powershell-tools
