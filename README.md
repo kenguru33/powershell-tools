@@ -1,5 +1,53 @@
 # powershell-tools
+# PowerShell Tools Scripts
 
+This repository contains a collection of PowerShell scripts for managing security groups and user accounts, primarily in Active Directory or Microsoft 365 environments. Each script is designed to automate common administrative tasks.
+
+## Scripts Overview
+
+### Add-AliasFromVsv-ToGroup.ps1
+Adds aliases from a VSV (Value Separated Values) file to a specified group.
+
+### Add-AliasToGroup.ps1
+Adds a single alias to a specified group.
+
+### Add-UpnToGroup.ps1
+Adds a user to a group using their User Principal Name (UPN).
+
+### Add-UsersFromCsv-ToGroup.ps1
+Bulk adds users to a group from a CSV file.
+
+### Create-SecurityGroup.ps1
+Creates a new security group.
+
+### Get-SecurityGroup.ps1
+Retrieves information about a security group.
+
+### Get-UpnByAlias.ps1
+Finds the User Principal Name (UPN) for a given alias.
+
+### Remove-SecurityGroup.ps1
+Removes a security group.
+
+## Usage
+
+1. Open PowerShell with the necessary permissions to manage users and groups.
+2. Navigate to the `scripts/` directory.
+3. Run the desired script, providing required parameters as needed. For example:
+    ```powershell
+    .\Add-UsersFromCsv-ToGroup.ps1 -CsvPath users.csv -GroupName "MyGroup"
+    ```
+
+## Requirements
+- PowerShell 5.1 or later
+- Appropriate permissions to manage users and groups
+- Some scripts may require the Active Directory or Microsoft Graph modules
+
+## Contributing
+Feel free to submit issues or pull requests to improve these scripts.
+
+## License
+MIT License
 ## Installation
 
 Enter powershell:
