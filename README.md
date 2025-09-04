@@ -11,6 +11,10 @@ One-time for current session
 ```
 $env:PATH = "/Users/bernt/Projects/PowerShell-Tools/scripts" + [IO.Path]::PathSeparator + $env:PATH
 ```
+Create Profile or use existing:
+```
+New-Item -ItemType File -Path $PROFILE -Force
+```
 
 Add the path to your profile (Use nvim or whatever editor you prefer):
 ```
