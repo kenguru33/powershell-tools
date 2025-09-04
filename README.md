@@ -1,6 +1,6 @@
-*POWERSHELL TOOLS*
+# powershell-tools
 
-***Installation***
+## Installation
 
 Enter powershell:
 ```
@@ -10,6 +10,10 @@ pwsh
 One-time for current session
 ```
 $env:PATH = "/Users/bernt/Projects/PowerShell-Tools/scripts" + [IO.Path]::PathSeparator + $env:PATH
+```
+Create Profile or use existing:
+```
+New-Item -ItemType File -Path $PROFILE -Force
 ```
 
 Add the path to your profile (Use nvim or whatever editor you prefer):
@@ -22,6 +26,13 @@ $scriptDir = "/Users/bernt/Projects/PowerShell-Tools/scripts"
 if (-not ($env:PATH -split [IO.Path]::PathSeparator | Where-Object { $_ -eq $scriptDir })) {
     $env:PATH = $scriptDir + [IO.Path]::PathSeparator + $env:PATH
 }
+
+function Get-SecurityGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Get-SecurityGroup.ps1 @args }
+function Create-SecurityGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Create-SecurityGroup.ps1 @args }
+function Add-UsersFromCsv-ToGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Add-UsersFromCsv-ToGroup.ps1 @args }
+function Add-UpnToGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Add-UpnToGroup.ps1 @args }
+function Get-UpnByAlias { /Users/bernt/Projects/PowerShell-Tools/scripts/Get-UpnByAlias.ps1 @args }
+function Remove-SecurityGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Remove-SecurityGroup.ps1 @args }
 ```
 
 **Create Security Group** 
@@ -61,4 +72,3 @@ matheo@domain.no
 ```
 .\Get-UpnByAlias.ps1 sveintm@rs.no
 ```
-# powershell-tools
