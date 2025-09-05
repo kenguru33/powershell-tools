@@ -81,6 +81,8 @@ function Add-UsersFromCsv-ToGroup { /Users/bernt/Projects/PowerShell-Tools/scrip
 function Add-UpnToGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Add-UpnToGroup.ps1 @args }
 function Get-UpnByAlias { /Users/bernt/Projects/PowerShell-Tools/scripts/Get-UpnByAlias.ps1 @args }
 function Remove-SecurityGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Remove-SecurityGroup.ps1 @args }
+function Remove-SecurityGroup { /Users/bernt/Projects/PowerShell-Tools/scripts/Create-DistributionList.ps1 @args }
+
 ```
 
 **Create Security Group** 
